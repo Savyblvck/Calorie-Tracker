@@ -1,41 +1,61 @@
 # NutriPulse - Calorie & Macro Tracker 🥗
 
-NutriPulse is a modern, responsive, dark-mode web application designed to help users track their daily calorie intake, macronutrients (Protein, Carbohydrates, Fats), hydration, and physical exercise burn seamlessly from any modern web browser.
-
-Built with pure **HTML5**, **CSS3**, and **Vanilla JavaScript**, all application data persists locally on your device via **Web Storage (`localStorage`)** with zero backend or database required.
+NutriPulse is a modern, responsive, dark-mode web application designed for effortless daily calorie tracking, macronutrient balance monitoring (Protein, Carbs, Fats), hydration logging, and exercise burn calculations — running 100% in your browser.
 
 ---
 
-## ✨ Features
+## 📌 What Is NutriPulse?
 
-- 🎯 **Interactive Calorie Ring Summary**: Live SVG progress ring calculating net calories (`Consumed - Exercise Burn`) against your customizable daily target limit.
-- 🥩 **Macronutrient Breakdown**: Dynamic color-coded progress bars for **Protein** (Emerald), **Carbohydrates** (Amber), and **Fats** (Rose), complete with gram and calorie totals.
+NutriPulse is a comprehensive, client-side web dashboard that gives you full visibility into your daily nutrition and energy balance. Key features include:
+
+- 🎯 **Daily Calorie Hero & SVG Progress Ring**: Displays real-time net calories (`Consumed - Exercise Burn`) against your personalized target goal.
+- 🥩 **Macronutrient Tracking**: Color-coded progress metrics for **Protein** (Emerald), **Carbohydrates** (Amber), and **Fats** (Rose) with automatic calorie contribution breakdown (`4 kcal/g` for P/C, `9 kcal/g` for F).
 - 🥗 **Categorized Meal Logging**: Log foods under 4 dedicated categories: **Breakfast**, **Lunch**, **Dinner**, and **Snacks & Drinks**.
-- ⚡ **Preset Food Catalog & Search**: Built-in 1-click preset library containing popular foods (Oatmeal, Eggs, Chicken Breast, Salmon, Rice, Avocado, Protein Shakes, etc.) with real-time search filtering.
-- ✍️ **Custom Entry & Saved Foods Library**: Create custom food entries and save your favorite meals for quick future logging.
-- 💧 **Hydration Tracker**: Keep track of your daily water intake with convenient `+250 ml` and `+500 ml` quick-add buttons.
-- 🏃‍♂️ **Exercise & Burn Logger**: Log workout activities and burned calories to adjust your net daily energy intake.
-- 📅 **Date Navigator**: Effortlessly switch dates to log past/future days or pick a specific date via the calendar date picker.
-- 📊 **7-Day Analytics View**: Visual historic bar chart comparing your past 7 days' calorie intake against your goal target.
-- ⚙️ **Custom Target Settings**: Easily update your calorie goal, macronutrient distribution, and hydration target anytime.
+- ⚡ **Preset Catalog & Search**: 1-click logging for popular healthy foods (Eggs, Oatmeal, Chicken Breast, Salmon, Rice, Avocado, Protein Shakes, etc.) with real-time search filtering.
+- ✍️ **Custom Entries & Saved Library**: Add custom recipes and save your favorite meals to your personal library for quick re-use.
+- 💧 **Hydration Tracker**: Monitor your daily water intake with convenient `+250 ml` and `+500 ml` quick-add buttons.
+- 🏃‍♂️ **Exercise & Burn Logger**: Log workouts to offset your net energy intake.
+- 📅 **Date Navigator & 7-Day Analytics**: Browse past or future days and view historic 7-day intake trends.
 
 ---
 
-## 🛠️ Technical Highlights & Constraints
+## 👥 Who Is It For?
 
-- ⚡ **Framework-Free**: Built entirely with Vanilla HTML5, CSS3, and JavaScript.
-- 🎨 **Custom Glassmorphism Styling**: Sleek, modern dark mode UI built from scratch **without Tailwind CSS** or **CSS Variables (`--custom-prop`)**.
-- 💾 **100% Offline & Private**: Uses standard browser `localStorage` for persistent data management — no accounts, tracking, or cloud backend required.
+NutriPulse was designed for a wide range of health, fitness, and tech-minded users:
+
+1. **Fitness & Gym Enthusiasts**: Bodybuilders, runners, and athletes who need exact macronutrient ratios (Protein, Carbs, Fats) to support muscle building, cutting, or athletic performance.
+2. **Everyday Healthy Eaters**: Anyone seeking a simple, frictionless tool to stay mindful of their daily calorie intake and hydration without paywalls or annoying ads.
+3. **Privacy-Conscious Users**: Users who want complete control over their personal data. NutriPulse stores all records locally in your browser — no account signup, no cloud databases, and no external tracking.
+4. **Developers & Designers**: Web developers looking for a clean, high-aesthetic reference project built strictly with Vanilla HTML5, CSS3, and JavaScript.
+
+---
+
+## 💡 Key Architectural & Design Decisions
+
+### 1. Vanilla HTML, CSS, and JavaScript (Zero Framework Overhead)
+- **Why**: Eliminates build steps, `npm install` bloat, and framework dependencies. The application loads instantly in any modern web browser without transpilation or bundle compilation.
+
+### 2. Hand-Crafted Glassmorphism Styling (No Tailwind & No CSS Variables)
+- **Why**: Built strictly using pure CSS without Tailwind CSS or CSS Custom Properties (`--variable`). Custom ambient glowing radial gradients, backdrop blur filters (`backdrop-filter: blur(16px)`), crisp translucent cards (`rgba(20, 27, 44, 0.75)`), and explicit color tokens ensure standard cross-browser performance and pristine visual presentation.
+
+### 3. Client-Side Web Storage (`localStorage`)
+- **Why**: Ensures 100% data privacy and offline accessibility. All settings, food logs, water records, exercise burns, and saved custom foods are stored under local keys (`nutripulse_settings`, `nutripulse_logs`, `nutripulse_saved_foods`).
+
+### 4. Frictionless Logging with Presets & Saved Foods
+- **Why**: Manual food logging often suffers from high user friction. NutriPulse solves this by combining instant 1-click preset catalog items, real-time search, and a "Save to My Saved Foods" checkbox for custom items.
+
+### 5. Net Calorie Calculation Formula (`Consumed - Burned`)
+- **Why**: Net energy balance accurately reflects daily metabolic balance. Calories burned through exercise automatically expand your remaining calorie budget in real time.
 
 ---
 
 ## 🚀 Getting Started
 
 ### Option 1: Direct File Open
-1. Double-click [index.html](file:///Users/admin/Desktop/Calorie%20Tracker/index.html) or drag it into any web browser.
+Double-click [index.html](file:///Users/admin/Desktop/Calorie%20Tracker/index.html) or drag it into any modern web browser.
 
 ### Option 2: Local HTTP Server
-You can also run a lightweight server locally:
+Run a lightweight local HTTP server:
 
 ```bash
 # Using Python 3
@@ -44,7 +64,7 @@ python3 -m http.server 8080
 # Or using Node.js http-server
 npx http-server -p 8080
 ```
-Then visit `http://localhost:8080` in your browser.
+Then navigate to `http://localhost:8080` in your web browser.
 
 ---
 
@@ -52,17 +72,8 @@ Then visit `http://localhost:8080` in your browser.
 
 ```
 Calorie Tracker/
-├── index.html   # Main HTML layout, modal popups, and semantic UI structure
-├── styles.css   # Dark glassmorphism stylesheet (custom CSS, zero CSS variables)
-├── app.js       # App logic, localStorage persistence, search, analytics & rendering
-└── README.md    # Documentation & usage instructions
+├── index.html   # Main HTML layout, header, modal popups, progress rings, & meal sections
+├── styles.css   # Dark glassmorphism stylesheet (custom CSS, zero CSS variables, zero Tailwind)
+├── app.js       # App logic, localStorage persistence, date picker, search, analytics & rendering
+└── README.md    # Project documentation, target audience & architectural design decisions
 ```
-
----
-
-## 🔒 Data Storage Keys
-
-NutriPulse stores data in your browser's `localStorage` under these keys:
-- `nutripulse_settings`: Stores daily calorie, macro, and hydration target goals.
-- `nutripulse_logs`: Stores meal entries, water intake, and exercise logs organized by date (`YYYY-MM-DD`).
-- `nutripulse_saved_foods`: Stores custom food items added to your personal food library.
