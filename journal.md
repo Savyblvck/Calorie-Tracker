@@ -4,7 +4,7 @@ This journal explains how the project was built, step-by-step, in simple and pla
 
 ---
 
-## 🎯 1. The Rules & Goals
+## 1. The Rules & Goals
 
 The goal was to build a modern **Calorie & Macro Tracker** app using standard web technologies (**HTML**, **CSS**, and **JavaScript**).
 
@@ -15,7 +15,7 @@ The goal was to build a modern **Calorie & Macro Tracker** app using standard we
 
 ---
 
-## 🛠️ 2. Step-by-Step Development
+## 2. Step-by-Step Development
 
 ### Step 1: Planning the App Structure
 Before writing code, I planned what key sections the app needed:
@@ -61,7 +61,7 @@ I wrote the JavaScript logic to make everything interactive:
 
 ---
 
-## 💡 Key Decisions Summary
+## Key Decisions Summary
 
 1. **Vanilla Web Technologies (No Frameworks)**: Keeps the app super fast, lightweight, and easy to run without any installation or build steps.
 2. **Glassmorphism Dark Theme**: Provides a clean, modern aesthetic that is easy on the eyes.
