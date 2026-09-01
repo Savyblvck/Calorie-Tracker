@@ -1,4 +1,4 @@
-# NutriPulse - Development Journal 📓
+# NutriPulse - Development Journal
 
 This journal explains how the project was built, step-by-step, in simple and plain language.
 
