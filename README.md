@@ -1,25 +1,25 @@
-# NutriPulse - Calorie & Macro Tracker 🥗
+# NutriPulse - Calorie & Macro Tracker
 
 NutriPulse is a modern, responsive, dark-mode web application designed for effortless daily calorie tracking, macronutrient balance monitoring (Protein, Carbs, Fats), hydration logging, and exercise burn calculations — running 100% in your browser.
 
 ---
 
-## 📌 What Is NutriPulse?
+## What Is NutriPulse?
 
 NutriPulse is a comprehensive, client-side web dashboard that gives you full visibility into your daily nutrition and energy balance. Key features include:
 
-- 🎯 **Daily Calorie Hero & SVG Progress Ring**: Displays real-time net calories (`Consumed - Exercise Burn`) against your personalized target goal.
-- 🥩 **Macronutrient Tracking**: Color-coded progress metrics for **Protein** (Emerald), **Carbohydrates** (Amber), and **Fats** (Rose) with automatic calorie contribution breakdown (`4 kcal/g` for P/C, `9 kcal/g` for F).
-- 🥗 **Categorized Meal Logging**: Log foods under 4 dedicated categories: **Breakfast**, **Lunch**, **Dinner**, and **Snacks & Drinks**.
-- ⚡ **Preset Catalog & Search**: 1-click logging for popular healthy foods (Eggs, Oatmeal, Chicken Breast, Salmon, Rice, Avocado, Protein Shakes, etc.) with real-time search filtering.
-- ✍️ **Custom Entries & Saved Library**: Add custom recipes and save your favorite meals to your personal library for quick re-use.
-- 💧 **Hydration Tracker**: Monitor your daily water intake with convenient `+250 ml` and `+500 ml` quick-add buttons.
-- 🏃‍♂️ **Exercise & Burn Logger**: Log workouts to offset your net energy intake.
-- 📅 **Date Navigator & 7-Day Analytics**: Browse past or future days and view historic 7-day intake trends.
+- **Daily Calorie Hero & SVG Progress Ring**: Displays real-time net calories (`Consumed - Exercise Burn`) against your personalized target goal.
+- **Macronutrient Tracking**: Color-coded progress metrics for **Protein** (Emerald), **Carbohydrates** (Amber), and **Fats** (Rose) with automatic calorie contribution breakdown (`4 kcal/g` for P/C, `9 kcal/g` for F).
+- **Categorized Meal Logging**: Log foods under 4 dedicated categories: **Breakfast**, **Lunch**, **Dinner**, and **Snacks & Drinks**.
+- **Preset Catalog & Search**: 1-click logging for popular healthy foods (Eggs, Oatmeal, Chicken Breast, Salmon, Rice, Avocado, Protein Shakes, etc.) with real-time search filtering.
+- **Custom Entries & Saved Library**: Add custom recipes and save your favorite meals to your personal library for quick re-use.
+- **Hydration Tracker**: Monitor your daily water intake with convenient `+250 ml` and `+500 ml` quick-add buttons.
+- **Exercise & Burn Logger**: Log workouts to offset your net energy intake.
+- **Date Navigator & 7-Day Analytics**: Browse past or future days and view historic 7-day intake trends.
 
 ---
 
-## 👥 Who Is It For?
+## Who Is It For?
 
 NutriPulse was designed for a wide range of health, fitness, and tech-minded users:
 
@@ -30,7 +30,7 @@ NutriPulse was designed for a wide range of health, fitness, and tech-minded use
 
 ---
 
-## 💡 Key Architectural & Design Decisions
+## Key Architectural & Design Decisions
 
 ### 1. Vanilla HTML, CSS, and JavaScript (Zero Framework Overhead)
 - **Why**: Eliminates build steps, `npm install` bloat, and framework dependencies. The application loads instantly in any modern web browser without transpilation or bundle compilation.
@@ -49,7 +49,7 @@ NutriPulse was designed for a wide range of health, fitness, and tech-minded use
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Option 1: Direct File Open
 Double-click [index.html](file:///Users/admin/Desktop/Calorie%20Tracker/index.html) or drag it into any modern web browser.
@@ -68,7 +68,7 @@ Then navigate to `http://localhost:8080` in your web browser.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Calorie Tracker/
